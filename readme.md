@@ -1,4 +1,6 @@
-This project is the backend of a Rock Paper Scissors game. You'll need the frontend for it to work correctly or you can launch it and test the routes. You'll also need a database for it to work properly (see below).
+This project is the backend of a Rock Paper Scissors game.
+You'll need the frontend for it to work correctly or you can launch it and test the routes.
+You'll also need a database for it to work properly (see below).
 
 ## Project Setup
 
@@ -24,7 +26,15 @@ CREATE TABLE IF NOT EXISTS `players` (
 ) ENGINE=MyISAM AUTO_INCREMENT=74 DEFAULT CHARSET=latin1;
 ```
 
-to test the routes I used the REST Client plugin in vs studio, here are some examples
+### dotenv was used, create a .env file and fill this variables
+```sh
+DATABASE_HOST=
+DATABASE_USER=
+DATABASE_PASSWORD=
+DATABASE_NAME=
+```
+
+### Examples of request to tests the routes (I used REST Client in VSCode)
 ```sh
 POST http://localhost:3000/api/getOneRPS
 Content-Type: application/json
