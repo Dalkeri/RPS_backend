@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser =  require('body-parser');
 
-const baseRoutes = require('./routes/baseRoute');
+const rpsRoutes = require('./routes/rps');
 require('dotenv').config();
 
 
@@ -20,7 +20,7 @@ app.use(express.static('public'));
 
 
 
-app.use('/api/base', baseRoutes);
+app.use('/api', rpsRoutes);
 
 
 module.exports = app;
